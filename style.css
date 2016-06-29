@@ -1,0 +1,558 @@
+/* Web Fonts -------------------- */
+
+@font-face {
+  font-family: 'Abolition Regular';
+  src: url('../fonts/abolition-regular-webfont.eot');
+  src: url('../fonts/abolition-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/abolition-regular-webfont.woff') format('woff'),
+       url('../fonts/abolition-regular-webfont.ttf') format('truetype');
+}
+
+/* Base Styles -------------------- */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #878787;
+  margin: 0;
+  font: 1em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+p {
+  clear: both;
+}
+h1,
+h2,
+h3 {
+  font-family: 'Abolition Regular', Helvetica, Arial, sans-serif;
+}
+
+h1 {  
+  font-size: 3rem; /* 90px/16px  */
+  color: rgba(255, 255, 255, 1);
+  text-transform: uppercase;
+  font-weight: normal;
+  line-height: 1.3; 
+  text-shadow: 0 1px 1px rgba(0,0,0,.8);
+  margin: 12px 0 0;
+}
+
+h2 {
+  font-size: 2em; /* 53px/16px  */
+  font-weight: normal;
+  line-height: 1.1;
+  margin: 0 0 .5em; /* 0 0 26px */
+}
+
+h3 {
+  display: block;
+  font-size: 1.25em; /* 20px/16px  */
+  color: #48525c;
+  line-height: 1.2;
+  margin-bottom: 1.7em; /* 34px */
+}
+
+h4 {
+  margin: 20px 0px;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+ul,
+ol {
+  margin: 30px 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* Pseudo-classes ------------------ */
+
+a:link {
+  color: rgb(255, 169, 73);
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgb(255, 169, 73);
+}
+
+a:hover {
+  color: rgba(255, 169, 73, .4);
+}
+
+a:active {
+  color: lightcoral;
+}
+
+.quote-b:hover {
+  background: linear-gradient(#111, transparent 90%),
+              linear-gradient(0deg, #111, transparent 90%),
+              #ffa949 url('../img/basic.gif') no-repeat top;
+  background-size: cover;
+}
+/* Main Styles --------------------- */
+
+.main-header {
+  padding-top: 170px;
+  height: 100vh;
+  background: linear-gradient(#ffa949, transparent 90%),
+              linear-gradient(0deg, #fff, transparent),
+              #ffa949 url('../img/sart.jpg') no-repeat center;
+  background-attachment: scroll, scroll, fixed;
+  min-height: 50%;
+  background-size: cover;
+}
+
+.nav-section {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: linear-gradient(to bottom right, #333, transparent);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 52px;
+    
+}
+
+.nav-section li {
+    float: left;
+}
+
+.nav-section a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.contact {
+  list-style: none;
+  padding: 0;
+}
+/* Change the link color to #111 (black) on hover */
+.nav-section a:hover {
+    background-color: #111;
+}
+.title {
+  color: white;
+  font-size: 1.625rem; /* 26px/16px */
+  letter-spacing: .065em;
+  font-weight: 200;
+  border-bottom: 2px solid;
+  padding-bottom: 10px;
+}
+
+.filter {
+  list-style-type: none;
+  overflow: hidden;
+  width: 100%;
+  height: 60px;
+  padding: 14px 16px !important;
+
+}
+
+.filter li {
+  float: left;
+
+}
+.intro {
+  font-size: 1.25em; /* 20px/16px */
+  line-height: 1.6;  
+}
+
+.primary-content,
+.main-header,
+.main-footer {
+  text-align: center;
+}
+
+.primary-content {
+  padding-top: 25px;
+  padding-bottom: 40px;
+}
+
+.resume  h3 {
+  margin-bottom: 0px;
+}
+
+.secondary-content {
+  padding-top: 40px;
+  padding-bottom: 70px;
+  border-bottom: 2px solid #dfe2e6;
+}
+
+.secondary-content img {
+  max-height: 50vh;
+
+}
+.callout {
+  font-size: 1.25em;
+  border-bottom: 3px solid;
+  padding: 0 9px 3px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+
+.main-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  border-bottom: 10px solid #ffa949;
+}
+
+
+
+.primary-content, 
+.secondary-content {
+  width: 75%;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin: auto;
+  max-width: 960px;
+}
+
+.arrow {
+  width: 50px;
+  margin-top: 150px;
+}
+.imac {
+  background: url('../img/imac.png') no-repeat top;
+  background-size: contain;
+  width: 250px;
+  height: 302.5px; /* 1:1.21 ratio between width and height*/
+  padding: 6px 1px 0px 0px;
+}
+
+.quote-b {
+  padding-top: 20px;
+  margin: auto;
+  width: 240px;
+  height: 137.5px;
+  padding-top: ;
+  text-align: center;
+  background: #111 url('../img/basic.gif') no-repeat top;
+  background-size: cover;
+  text-align: center;
+  margin-top: 0;
+  border-radius: 10px;
+}
+
+.quote-a {
+  padding-top: 20px;
+  margin: auto;
+  width: 240px;
+  height: 137.5px;
+  padding-top: ;
+  text-align: center;
+  background-color: #111;
+  background-size: cover;
+  text-align: center;
+  margin-top: 0;
+  border-radius: 10px;
+}
+
+.quote-a h1 {
+  font-size: .85em;
+}
+
+.badge {
+    display: block !important;
+    color: grey;
+    background: none;
+    padding: 0px !important;
+    font-size: 15px;
+  }
+
+.dev::after {
+  display: block !important;
+  color: grey;
+  background: none;
+  padding: 0px !important;
+  font-size: 15px;
+  content: "Development";
+}
+
+/* Floated Columns ------------------ */
+
+.block-a,
+.block-b {
+  width: 46.5%;
+}
+
+.block-a {
+  float: left;
+}
+
+.block-b {
+  float: right;
+}
+
+/* Float Clearfix ------------------ */
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Media Queries -------------------- */
+
+@media (max-width: 1024px) {
+  .primary-content,
+  .secondary-content {
+    width: 90%;
+  }
+
+}
+
+@media (min-width: 1144px) {
+  .badge {
+  padding: 5px !important;
+  display: inline !important;
+  background-color: red;
+  border-radius: 4px; 
+  float: right;
+  color: white;
+  font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav li {
+  
+  }
+  .primary-content,
+  .secondary-content {
+    width: 100%;
+    padding: 20px;
+    border-top: none;
+  }
+
+  .main-header {
+    max-height: 100vh;
+    padding: 50px 25px 0;
+  }
+  .title {
+    font-size: 1.5rem;
+    border: none;
+  }
+  h1 {
+    font-size: 2rem;
+    line-height: 1.1;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  .arrow {
+    width: 50px;
+  }
+  .intro {
+    font-size: 1rem;
+  }
+  .block-a,
+  .block-b {
+    float: none;
+    width: 100%;
+  }
+  .b
+  .main-footer {
+    padding: 20px 0;
+  }
+}
+
+/* Functions */
+/*Clases that are used throughout to preform basic functions to elements*/
+
+.right {
+  float: right;
+}
+
+.thumb {
+  width: 30px;
+  vertical-align: middle;
+}
+
+.space {
+  margin-left: 10px;
+}
+/*makes a space between buttons or images*/
+.t-border {
+  border-top: 2px solid #dfe2e6;
+}
+
+.b-border {
+  border-bottom: 2px solid #dfe2e6;
+}
+
+.t-space {
+  margin-top: 1.7em;
+}
+
+.center {
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+    text-align: center;
+}
+
+.center-b {
+  margin: auto;
+  text-align: center;
+}
+.radial-b {
+  border-radius: 1px;
+}
+
+.circle {
+  border-radius: 50%;
+  width: 50%;
+}
+
+.nav:not(first-child) {
+  margin-left: 10px;
+
+}
+
+.white-t  p,
+.white-t h1,
+.white-t h2,
+.white-t h3{
+  color: white;
+}
+
+.white-t a:hover,
+.white-t a:link {
+  color: white;
+}
+.under {
+  color: white;
+  font-size: 1.625rem; /* 26px/16px */
+  letter-spacing: .065em;
+  font-weight: 200;
+  border-bottom: 2px solid;
+  padding-bottom: 10px;
+}
+
+.no-upper {
+  text-transform: none;
+}
+/* This is a class that prevents text from becoming transparent with its container */
+/* Psudo Classes */
+.dev::before {
+  background-image: url('../img/dev.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-right: 33px;
+  content: "";
+}
+
+.stand-up::before{
+  background-image: url('../img/stand-up.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-right: 33px;
+  content: "";
+}
+
+.rock-climbing::before {
+  background-image: url('../img/rock-climbing.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-right: 33px;
+  content: "";
+}
+
+.tutoring::before {
+  background-image: url('../img/tutoring.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-right: 33px;
+  content: "";
+}
+
+.travel::before {
+  background-image: url('../img/travel.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-right: 33px;
+  content: "";
+}
+
+.other::before {
+  background-image: url('../img/other.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-right: 33px;
+  content: "";
+}
+
+.dev::after {
+  display: block !important;
+  color: grey;
+  background: none;
+  padding: 0px !important;
+  font-size: 15px;
+  content: "Development";
+}
+
+.stand-up::after {
+  display: block !important;
+  color: grey;
+  background: none;
+  padding: 0px !important;
+  font-size: 15px;
+  content: "Stand-up";
+}
+
+.rock-climbing::after {
+  display: block !important;
+  color: grey;
+  background: none;
+  padding: 0px !important;
+  font-size: 15px;
+  content: "Rock Climbing";
+}
+
+.tutoring::after {
+  display: block !important;
+  color: grey;
+  background: none;
+  padding: 0px !important;
+  font-size: 15px;
+  content: "Tutoring";
+}
+
+.travel::after {
+  display: block !important;
+  color: grey;
+  background: none;
+  padding: 0px !important;
+  font-size: 15px;
+  content: "Travel";
+}
+
+.other::after {
+  display: block !important;
+  color: grey;
+  background: none;
+  padding: 0px !important;
+  font-size: 15px;
+  content: "Other";
+}
+
+
+
+
+
+
+
